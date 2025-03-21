@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background-color: #2E7D32;
+    padding: 1em 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 2em;
+}
+
+main {
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: white;
+}
+
+.card img, .card video {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #2E7D32;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+/* Append these to the end of styles.css */
+
+/* Home Hero Section */
+.home-hero {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 4em 1em;
+}
+
+.home-hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 0.3em;
+}
+
+.home-hero p {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+
+.home-hero-button {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    background-color: #2E7D32;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.home-hero-button:hover {
+    background-color: #388E3C;
+}
+
+/* Home Intro Section */
+.home-intro {
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.home-intro h2 {
+    color: #2E7D32;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.home-intro p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+/* Home Featured Section */
+.home-featured {
+    background-color: #E8F5E9;
+    padding: 2em 20px;
+    text-align: center;
+}
+
+.home-featured h2 {
+    color: #2E7D32;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.home-featured-card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5em;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.home-featured-card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1em;
+}
+
+.home-learn-more {
+    display: inline-block;
+    margin-top: 1em;
+    color: #2E7D32;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.home-learn-more:hover {
+    text-decoration: underline;
+}
+
+/* Home Highlights Section */
+.home-highlights {
+    max-width: 1000px;
+    margin: 2em auto 60px auto;
+    padding: 0 20px;
+}
+
+.home-highlights h2 {
+    color: #2E7D32;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.home-highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.home-highlight-item {
+    background: white;
+    padding: 1.5em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.home-highlight-item h3 {
+    color: #388E3C;
+    margin-bottom: 0.5em;
+}
+
+/* Responsive Adjustments for Home Page */
+@media (max-width: 600px) {
+    .home-hero h1 {
+        font-size: 2em;
+    }
+    .home-hero p {
+        font-size: 1em;
+    }
+    .home-hero-button {
+        padding: 0.6em 1.2em;
+    }
+    .home-intro h2, .home-featured h2, .home-highlights h2 {
+        font-size: 1.5em;
+    }
+}
